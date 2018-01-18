@@ -1,0 +1,29 @@
+meta {
+    title: "TR display";
+    version: "0.0.1";
+    author: "Rub21";
+    link: "https://github.com/Rub21";
+    watch-modified: true;
+}
+
+relation[type=restriction] >[role=from] way {
+    width: 10;
+    color: yellow;
+    opacity: 0.3;
+    z-index: -5;
+}
+
+relation[type=restriction] >[role=to] way {
+    width: 10;
+    color: lime;
+    opacity: 0.3;
+    z-index: -5;
+}
+
+relation[type=restriction] >[role=via] node {
+  symbol-shape: circle;
+  symbol-size: 30;
+  symbol-fill-color: lime;
+  symbol-fill-opacity: 0.3;
+  z-index: -5;
+}

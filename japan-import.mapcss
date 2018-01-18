@@ -1,0 +1,16 @@
+meta {
+    title: "Japan Import";
+    shortdescription: "Find all Japan import highways";
+    description: "This MapCSS style highlights highways that contain source = YahooJapan/ALPSMAP with version =1 highways.";
+    version: "0.1";
+    author: "rub21";
+}
+
+way[source = "YahooJapan/ALPSMAP"]{
+    width: 2;
+    fill-color: #e1bd6a;
+    casing-width: 4;
+    casing-color: lime;
+    casing-opacity: 0.2;
+    
+}

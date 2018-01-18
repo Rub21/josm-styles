@@ -1,0 +1,20 @@
+
+meta   
+{
+	title: "Coloured Area:highways";
+	author: "Rub21"; 
+	version: "1.0"; 
+	description: "Coloured polygon highways";
+        link: "https://github.com/Rub21/josm-styles";
+        watch-modified: true;
+}
+	
+area[highway][area]
+{
+	z-index: 1;
+	color: #8d3eb7; 
+	fill-color: #8d3eb7; 
+	width: 1;
+	dashes: 10,4;
+}
+

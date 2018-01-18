@@ -1,1 +1,1 @@
-# josm-styles
+## Custom JOSM styles

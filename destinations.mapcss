@@ -1,0 +1,19 @@
+
+meta
+{
+	title: "ShowDestination";
+	version: "1.0.013_2015-06-02";
+	author: "Rub21";
+	link: "http://josm.openstreetmap.de";
+	watch-modified: true;
+}
+
+
+way[highway][destination]
+{
+    width: 3;
+    dashes: 10,10;
+    dashes-background-color: red;
+    
+}
+

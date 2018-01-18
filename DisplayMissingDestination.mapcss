@@ -1,0 +1,36 @@
+
+meta {
+    title: "DisplayMissingDestination";
+    version: "0.0.1";
+    author: "Rub21";
+    link: "https://github.com/Rub21";
+    watch-modified: true;
+}
+way[highway=motorway_link][!/^destination/]{
+    width: 10;
+    color: lime;
+    opacity: 0.3;
+    z-index: -5;
+}
+node[highway=motorway_junction] {
+    text-halo-color: white;
+    text-halo-radius: 3;
+    font-size: 12;
+    text-color: black;
+    text-anchor-vertical: center;
+    text-offset-x: 10;
+    text-offset-y: -5;
+    text: tag("ref");
+    z-index: 1;
+}
+way[highway=motorway_link]["destination:ref"],way[highway=motorway_link][destination]{
+    text-halo-color: white;
+    text-halo-radius: 2;
+    font-size: 12;
+    text-color: black;
+    text-anchor-vertical: center;
+    text-offset-x: 10;
+    text-offset-y: -5;
+    text: join(" / ", tag("destination:ref"), tag("destination"));
+    z-index: 1;
+}

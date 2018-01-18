@@ -1,0 +1,16 @@
+meta 
+{
+    title: "Modified objects for Nodes";
+    version: "0.0.1";
+    author: "Rub21";    
+    watch-modified: true;
+}
+
+node:modified::modified_layer 
+{
+    symbol-shape: circle;
+    symbol-size: 20;
+    symbol-fill-color: lime;
+    symbol-fill-opacity: 0.3;
+    z-index: -5;
+}
