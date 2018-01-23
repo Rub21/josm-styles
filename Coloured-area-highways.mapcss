@@ -2,19 +2,106 @@
 meta   
 {
 	title: "Coloured Area:highways";
-	author: "Rub21"; 
+	author: "Rub21,ridixcr"; 
 	version: "1.0"; 
 	description: "Coloured polygon highways";
         link: "https://github.com/Rub21/josm-styles";
         watch-modified: true;
 }
 	
-area[highway][area]
+area[highway=residential][area][surface=ground]
 {
 	z-index: 1;
-	color: #8d3eb7; 
-	fill-color: #8d3eb7; 
+	color: #ff5500; 
+	fill-color: #ff5500; 
 	width: 1;
 	dashes: 10,4;
 }
-
+area[highway=residential][area][surface=unpaved]
+{
+	z-index: 1;
+	color: #ff5500; 
+	fill-color: #ff5500; 
+	width: 1;
+	dashes: 10,4;
+}
+area[highway=residential][area][surface=paved]
+{
+	z-index: 1;
+	color: #ff9a09; 
+	fill-color: #ff9a09; 
+	width: 1;
+	dashes: 10,4;
+}
+area[highway=service][area][surface=ground]
+{
+	z-index: 1;
+	color: #0200a0; 
+	fill-color: #0200a0; 
+	width: 1;
+	dashes: 10,4;
+}
+area[highway=service][area][surface=unpaved]
+{
+	z-index: 1;
+	color: #0200a0; 
+	fill-color: #0200a0; 
+	width: 1;
+	dashes: 10,4;
+}
+area[highway=service][area][surface=paved]
+{
+	z-index: 1;
+	color: #5755df; 
+	fill-color: #5755df; 
+	width: 1;
+	dashes: 10,4;
+}
+area[highway=pedestrian][area]
+{
+	z-index: 1;
+	color: green; 
+	fill-color: green; 
+	width: 1;
+	dashes: 10,4;
+}
+area[highway=primary][area],area[highway=primary_link][area]
+{
+	z-index: 1;
+	color: orange; 
+	fill-color: orange; 
+	width: 1;
+	dashes: 10,4;
+}
+area[highway=secondary][area]
+{
+	z-index: 1;
+	color: yellow; 
+	fill-color: yellow; 
+	width: 1;
+	dashes: 10,4;
+}
+area[highway=tertiary][area]
+{
+	z-index: 1;
+	color: red; 
+	fill-color: red; 
+	width: 1;
+	dashes: 10,4;
+}
+area[highway=trunk][area]
+{
+	z-index: 1;
+	color: #23e506; 
+	fill-color: #23e506; 
+	width: 1;
+	dashes: 10,4;
+}
+area[amenity=parking]
+{
+	z-index: 1;
+	color: #5755df; 
+	fill-color: #5755df; 
+	width: 1;
+	dashes: 10,4;
+}
