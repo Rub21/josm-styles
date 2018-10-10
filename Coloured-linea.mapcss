@@ -1,0 +1,19 @@
+
+meta   
+{
+	title: "Coloured POwer lines";
+	author: "Rub21"; 
+	version: "1.0"; 
+	description: "Coloured polygon highways";
+        link: "https://github.com/Rub21/josm-styles";
+        watch-modified: true;
+}
+	
+way[power = "line"]{
+    width: 1;
+    fill-color: #e1bd6a;
+    casing-width: 4;
+    casing-color: lime;
+    casing-opacity: 0.2;
+    
+}

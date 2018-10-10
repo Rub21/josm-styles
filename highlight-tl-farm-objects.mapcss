@@ -1,0 +1,46 @@
+meta 
+{
+    title: "highlight-tl-farm-objects";
+    version: "0.0.1";
+    author: "Rub21";    
+    watch-modified: true;
+}
+
+node[tileid]
+{
+    symbol-shape: circle;
+    symbol-size: 40;
+    symbol-fill-color: #e100ff;
+    symbol-fill-opacity: 0.5;
+    z-index: -5;
+}
+
+way{
+    width: 2;
+    color: #f6ff00;
+}
+
+relation way{
+    width: 2;
+    color: #f90000;
+}
+
+node[tileid] {
+    text: tag(tileid);
+	text-halo-color: white;
+	text-halo-radius: 3;
+	font-size: 14;
+	text-color: black;
+	text-anchor-vertical: center;
+	text-offset-x: 10;
+	text-offset-y: -15;
+}
+
+way[tileid] {
+    text: tag(tileid);
+	text-halo-color: #e5e43d;
+	text-halo-radius: 3;
+	font-size: 14;
+	text-color: black;
+	text-anchor-vertical: center;
+}
