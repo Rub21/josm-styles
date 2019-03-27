@@ -1,0 +1,37 @@
+ 
+meta {
+    title: "Address names";
+    version: "0.0.1";
+    author: "Rub21";
+    link: "https://github.com/Rub21";
+    watch-modified: true;
+}
+
+node{
+    text-halo-color: white;
+    text-halo-radius: 2;
+    font-size: 14;
+    text-color: black;
+    text-anchor-vertical: center;
+    text-offset-x: -70;
+    text-offset-y: 20;
+    text: tag("DIRECCION");
+    z-index: 1;
+}
+
+node:modified::modified_layer 
+{
+    symbol-shape: circle;
+    symbol-size: 20;
+    symbol-fill-color: lime;
+    symbol-fill-opacity: 0.3;
+    z-index: -5;
+}
+
+node[fixed]{
+    symbol-shape: circle;
+    symbol-size: 20;
+    symbol-fill-color: #b600ff;
+    symbol-fill-opacity: 0.9;
+    z-index: -19;   
+}

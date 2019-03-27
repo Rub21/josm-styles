@@ -1,0 +1,28 @@
+
+meta 
+{
+    title: "Modified objects";
+    description: "Highlight modified objects";
+    version: "0.1.11_2017-11-29";
+    author: "Sebastian Klein";
+    link: "https://josm.openstreetmap.de/wiki/Styles/Modified";
+    min-josm-version: "7193";
+    icon: "modified_objects_style_icon.svg";
+    watch-modified: true;
+}
+
+meta[lang=de]
+{
+    title: "Geänderte Objekte";
+    description: "Geänderte Objekte hervorheben";
+}
+
+node[prop("action")="modify"]
+{
+    symbol-shape: circle;
+    symbol-size: 50;
+    symbol-fill-color: modified_objects_style#00FF00;
+    symbol-fill-opacity: 0.3;
+    z-index: -5;
+}
+
