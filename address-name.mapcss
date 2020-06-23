@@ -8,30 +8,30 @@ meta {
 }
 
 node{
-    text-halo-color: white;
-    text-halo-radius: 2;
     font-size: 14;
-    text-color: black;
+    text-color: white;
     text-anchor-vertical: center;
-    text-offset-x: -70;
-    text-offset-y: 20;
-    text: tag("DIRECCION");
+    text-offset-x: 10;
+    text-offset-y: -3;
+    text: tag("Calle_n");
     z-index: 1;
 }
 
-node:modified::modified_layer 
+node[idBuilding]{
+    font-size: 14;
+    text-color: white;
+    text-anchor-vertical: center;
+    text-offset-x: 10;
+    text-offset-y: -3;
+    text: tag("Calle_n");
+    z-index: 1;
+}
+
+node:new 
 {
     symbol-shape: circle;
     symbol-size: 20;
     symbol-fill-color: lime;
     symbol-fill-opacity: 0.3;
     z-index: -5;
-}
-
-node[fixed]{
-    symbol-shape: circle;
-    symbol-size: 20;
-    symbol-fill-color: #b600ff;
-    symbol-fill-opacity: 0.9;
-    z-index: -19;   
 }

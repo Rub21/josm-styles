@@ -1,0 +1,33 @@
+node[environment=URBANA] 
+{
+    symbol-shape: circle;
+    symbol-size: 20;
+    symbol-fill-color: yellow;
+    symbol-fill-opacity: 0.6;
+    z-index: -5;
+}
+
+node[sector=NO_OFICIAL] 
+{
+    symbol-shape: circle;
+    symbol-size: 20;
+    symbol-fill-color: yellow;
+    symbol-fill-opacity: 0.6;
+    z-index: -5;
+}
+
+node[sector=OFICIAL] 
+{
+    symbol-shape: circle;
+    symbol-size: 20;
+    symbol-fill-color: yellow;
+    symbol-fill-opacity: 0.6;
+    z-index: -5;
+}
+
+
+way[ml_prediction_school=whole_country] 
+{
+    width: 2;
+    color: #04ff00;
+}

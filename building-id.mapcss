@@ -1,0 +1,31 @@
+
+meta {
+	title: "idBuilding";
+	description: "Coloring of buildings with or without idBuilding.)";
+	author: "Rub21";
+	watch-modified: true;
+}
+
+
+area[substring(tag("idBuilding"),(length(tag("idBuilding"))-1))="0"]{fill-color: #D8FBB0; color: #D8FBB0}
+area[substring(tag("idBuilding"),(length(tag("idBuilding"))-1))="1"]{fill-color: #1E90FF; color: #1E90FF}
+area[substring(tag("idBuilding"),(length(tag("idBuilding"))-1))="2"]{fill-color: #EE1289; color: #EE1289}
+area[substring(tag("idBuilding"),(length(tag("idBuilding"))-1))="3"]{fill-color: #FFD700; color: #FFD700}
+area[substring(tag("idBuilding"),(length(tag("idBuilding"))-1))="4"]{fill-color: #7CFC00; color: #7CFC00}
+area[substring(tag("idBuilding"),(length(tag("idBuilding"))-1))="5"]{fill-color: #D82BD6; color: #D82BD6}
+area[substring(tag("idBuilding"),(length(tag("idBuilding"))-1))="6"]{fill-color: #00FF66; color: #00FF66}
+area[substring(tag("idBuilding"),(length(tag("idBuilding"))-1))="7"]{fill-color: #4328F6; color: #4328F6}
+area[substring(tag("idBuilding"),(length(tag("idBuilding"))-1))="8"]{fill-color: #D32F2F; color: #D32F2F}
+area[substring(tag("idBuilding"),(length(tag("idBuilding"))-1))="9"]{fill-color: #26CEF5; color: #26CEF5}
+
+
+node[substring(tag("idBuilding"),(length(tag("idBuilding"))-1))="0"]{symbol-shape: circle; symbol-size: 20; symbol-fill-color: #D8FBB0; symbol-fill-opacity: 0.6;}
+node[substring(tag("idBuilding"),(length(tag("idBuilding"))-1))="1"]{symbol-shape: circle; symbol-size: 20; symbol-fill-color: #1E90FF; symbol-fill-opacity: 0.6;}
+node[substring(tag("idBuilding"),(length(tag("idBuilding"))-1))="2"]{symbol-shape: circle; symbol-size: 20; symbol-fill-color: #EE1289; symbol-fill-opacity: 0.6;}
+node[substring(tag("idBuilding"),(length(tag("idBuilding"))-1))="3"]{symbol-shape: circle; symbol-size: 20; symbol-fill-color: #FFD700; symbol-fill-opacity: 0.6;}
+node[substring(tag("idBuilding"),(length(tag("idBuilding"))-1))="4"]{symbol-shape: circle; symbol-size: 20; symbol-fill-color: #7CFC00; symbol-fill-opacity: 0.6;}
+node[substring(tag("idBuilding"),(length(tag("idBuilding"))-1))="5"]{symbol-shape: circle; symbol-size: 20; symbol-fill-color: #D82BD6; symbol-fill-opacity: 0.6;}
+node[substring(tag("idBuilding"),(length(tag("idBuilding"))-1))="6"]{symbol-shape: circle; symbol-size: 20; symbol-fill-color: #00FF66; symbol-fill-opacity: 0.6;}
+node[substring(tag("idBuilding"),(length(tag("idBuilding"))-1))="7"]{symbol-shape: circle; symbol-size: 20; symbol-fill-color: #4328F6; symbol-fill-opacity: 0.6;}
+node[substring(tag("idBuilding"),(length(tag("idBuilding"))-1))="8"]{symbol-shape: circle; symbol-size: 20; symbol-fill-color: #D32F2F; symbol-fill-opacity: 0.6;}
+node[substring(tag("idBuilding"),(length(tag("idBuilding"))-1))="9"]{symbol-shape: circle; symbol-size: 20; symbol-fill-color: #26CEF5; symbol-fill-opacity: 0.6;}

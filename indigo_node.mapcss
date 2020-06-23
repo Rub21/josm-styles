@@ -1,0 +1,49 @@
+
+node["sfdc"]
+{
+    symbol-shape: circle;
+    symbol-size: 15;
+    symbol-fill-color: yellow;
+    symbol-fill-opacity: 2;
+    text: tag("group_id");
+    font-size: 12;
+    text-halo-radius: 2;
+
+}
+
+node[reuters]
+{
+    symbol-shape: circle;
+    symbol-size: 15;
+    symbol-fill-color: green;
+    symbol-fill-opacity: 2;
+    text: tag("group_id");
+    font-size: 12;
+    text-halo-radius: 2;
+
+}
+
+node[dtn]
+{
+    symbol-shape: circle;
+    symbol-size: 15;
+    symbol-fill-color: blue;
+    symbol-fill-opacity: 2;
+    text: tag("group_id");
+    font-size: 12;
+    text-halo-radius: 2;
+
+}
+
+node[barchart]
+{
+    symbol-shape: circle;
+    symbol-size: 15;
+    symbol-fill-color: red;
+    symbol-fill-opacity: 2;
+    text: join(" / ", tag("source_system"), tag("name"), tag("group_id"));
+    font-size: 12;
+    text-halo-radius: 2;
+
+}
+
