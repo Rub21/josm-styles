@@ -1,0 +1,17 @@
+
+meta
+{
+	title: "ml-planes";
+	version: "1.0.013_2015-06-02";
+	author: "Rub21";
+	link: "http://josm.openstreetmap.de";
+	watch-modified: true;
+}
+
+
+way[project="satellite_ml_covid19_phase2"]
+{
+    width: 3;
+    dashes: 2,2;
+    dashes-background-color: #a500ff;
+}
