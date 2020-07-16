@@ -1,0 +1,49 @@
+
+node[SOURCE_SYS=SFDC]
+{
+    symbol-shape: circle;
+    symbol-size: 15;
+    symbol-fill-color: yellow;
+    symbol-fill-opacity: 2;
+    font-size: 16;
+    text-halo-radius: 2;
+    text: join(" --- ", tag("MODIFIED_G"), tag("NAME"), tag("ADDRESS"));
+
+}
+
+node[SOURCE_SYS=REUTERS]
+{
+    symbol-shape: circle;
+    symbol-size: 15;
+    symbol-fill-color: blue;
+    symbol-fill-opacity: 2;
+    font-size: 16;
+    text-halo-radius: 1;
+    text: join(" --- ", tag("MODIFIED_G"),tag("NAME"), tag("ADDRESS"));
+
+}
+
+node[SOURCE_SYS=DTN]
+{
+    symbol-shape: circle;
+    symbol-size: 15;
+    symbol-fill-color: green;
+    symbol-fill-opacity: 2;
+    font-size: 16;
+    text-halo-radius: 1;
+    text: join(" --- ", tag("MODIFIED_G"),tag("NAME"), tag("ADDRESS"));
+
+}
+
+node[SOURCE_SYS=BARCHART]
+{
+    symbol-shape: circle;
+    symbol-size: 15;
+    symbol-fill-color: red;
+    symbol-fill-opacity: 2;
+    font-size: 16;
+    text-halo-radius: 1;
+    text: join(" --- ", tag("MODIFIED_G"),tag("NAME"), tag("ADDRESS"));
+
+}
+

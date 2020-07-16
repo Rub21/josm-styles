@@ -15,3 +15,21 @@ way[project="satellite_ml_covid19_phase2"]
     dashes: 2,2;
     dashes-background-color: #a500ff;
 }
+
+
+way:modified::modified_layer 
+{
+	width: 20;
+    color: lime;
+    opacity: 0.3;
+    z-index: -5;
+}
+
+node:modified::modified_layer 
+{
+    symbol-shape: circle;
+    symbol-size: 20;
+    symbol-fill-color: lime;
+    symbol-fill-opacity: 0.3;
+    z-index: -5;
+}
