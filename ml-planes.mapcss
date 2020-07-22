@@ -19,9 +19,9 @@ way[project="satellite_ml_covid19_phase2"]
 
 way:modified::modified_layer 
 {
-	width: 20;
+	width:5;
     color: lime;
-    opacity: 0.3;
+    opacity: 0.7;
     z-index: -5;
 }
 

@@ -1,4 +1,18 @@
 
+node[SOURCE_SYS=BARCHART]
+{
+    symbol-shape: circle;
+    symbol-size: 15;
+    symbol-fill-color: red;
+    symbol-fill-opacity: 2;
+    font-size: 16;
+    text-halo-radius: 1;
+    text-halo-color:#f3d15c;
+    text-color: white;
+    text: join(" --- ", tag("GROUP_ID"), tag("MODIFIED_G"),tag("NAME"), tag("ADDRESS"), tag("STATE"));
+}
+
+
 node[SOURCE_SYS=SFDC]
 {
     symbol-shape: circle;
@@ -7,8 +21,9 @@ node[SOURCE_SYS=SFDC]
     symbol-fill-opacity: 2;
     font-size: 16;
     text-halo-radius: 1;
+    text-halo-color:#f3d15c;
+    text-color: white;
     text: join(" --- ", tag("GROUP_ID"), tag("MODIFIED_G"), tag("NAME"), tag("ADDRESS"), tag("STATE"));
-
 }
 
 node[SOURCE_SYS=REUTERS]
@@ -20,7 +35,8 @@ node[SOURCE_SYS=REUTERS]
     font-size: 16;
     text-halo-radius: 1;
     text: join(" --- ", tag("GROUP_ID"), tag("MODIFIED_G"),tag("NAME"), tag("ADDRESS"), tag("STATE"));
-
+    text-halo-color:#f3d15c;
+    text-color: white;
 }
 
 node[SOURCE_SYS=DTN]
@@ -31,19 +47,18 @@ node[SOURCE_SYS=DTN]
     symbol-fill-opacity: 2;
     font-size: 16;
     text-halo-radius: 1;
+    text-halo-color:#f3d15c;
+    text-color: white;
     text: join(" --- ", tag("GROUP_ID"), tag("MODIFIED_G"),tag("NAME"), tag("ADDRESS"), tag("STATE"));
 
 }
 
-node[SOURCE_SYS=BARCHART]
+
+node[VISITED=t],node[VISITED=T]
 {
     symbol-shape: circle;
-    symbol-size: 15;
-    symbol-fill-color: red;
-    symbol-fill-opacity: 2;
-    font-size: 16;
-    text-halo-radius: 1;
-    text: join(" --- ", tag("GROUP_ID"), tag("MODIFIED_G"),tag("NAME"), tag("ADDRESS"), tag("STATE"));
-
+    symbol-size: 40;
+    symbol-fill-color: lime;
+    symbol-fill-opacity: 0.3;
+    z-index: -90;
 }
-
