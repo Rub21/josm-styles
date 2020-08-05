@@ -1,0 +1,37 @@
+meta {
+	title: "unicef";
+	description: "Unicef phase3";
+	author: "Rub21";
+	watch-modified: true;
+}
+
+node[source=osm] 
+{
+    symbol-shape: circle;
+    symbol-size: 40;
+    symbol-fill-color:#9800ff;
+    symbol-fill-opacity: 0.8;
+    z-index: -5;
+    font-size: 20;
+    text-halo-radius: 1;
+    text-halo-color:#000000;
+    text-color: white;
+    text: tag("name");
+}
+
+node[source=unicef] 
+{
+    symbol-shape: circle;
+    symbol-size: 40;
+    symbol-fill-color: yellow;
+    symbol-fill-opacity: 0.8;
+    z-index: -5;
+    
+    font-size: 20;
+    text-halo-radius: 1;
+    text-halo-color:#000000;
+    text-color: white;
+    text: tag("name");
+}
+
+

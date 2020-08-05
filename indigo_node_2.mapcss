@@ -1,3 +1,9 @@
+meta {
+	title: "indigo";
+	description: "indigo frams";
+	author: "Rub21";
+	watch-modified: true;
+}
 
 node[SOURCE_SYS=BARCHART]
 {
