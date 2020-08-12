@@ -4,11 +4,10 @@ meta {
 	author: "Rub21";
 	watch-modified: true;
 }
-
 node[source=osm] 
 {
     symbol-shape: circle;
-    symbol-size: 40;
+    symbol-size: 20;
     symbol-fill-color:#9800ff;
     symbol-fill-opacity: 0.8;
     z-index: -5;
@@ -18,15 +17,13 @@ node[source=osm]
     text-color: white;
     text: tag("name");
 }
-
 node[source=unicef] 
 {
     symbol-shape: circle;
-    symbol-size: 40;
+    symbol-size: 20;
     symbol-fill-color: yellow;
     symbol-fill-opacity: 0.8;
     z-index: -5;
-    
     font-size: 20;
     text-halo-radius: 1;
     text-halo-color:#000000;
@@ -34,4 +31,35 @@ node[source=unicef]
     text: tag("name");
 }
 
+node[dc_point_moved=yes] 
+{
+    symbol-shape: circle;
+    symbol-size: 22;
+    symbol-stroke-width:5; 
+    symbol-stroke-color:#117757;
+}
+
+node[dc_reviewed=yes] 
+{
+    symbol-shape: circle;
+    symbol-size: 22;
+    symbol-stroke-width:5; 
+    symbol-stroke-color:lime;
+}
+node[dc_has_pattern_school=yes] 
+{
+    symbol-shape: circle;
+    symbol-size: 22;
+    symbol-stroke-width:5; 
+    symbol-stroke-color:#0475cc;
+}
+
+
+node[dc_has_pattern_school=no] 
+{
+    symbol-shape: circle;
+    symbol-size: 22;
+    symbol-stroke-width:5; 
+    symbol-stroke-color:red;
+}
 

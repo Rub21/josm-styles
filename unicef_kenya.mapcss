@@ -1,0 +1,40 @@
+
+meta {
+	title: "unicef kenya validator";
+	description: "Coloring of ways)";
+	author: "Rub21";
+	version: "1";
+	watch-modified: true;
+}
+
+way[name] {fill-opacity:0.2}
+way[name=~/(^|.+ )[АA]/] {color: #AFEEEE; width: 3;}
+way[name=~/(^|.+ )[БB]/] {color: #90EE90; width: 3;}
+way[name=~/(^|.+ )[ВC]/] {color: #EE1289; width: 3;}
+way[name=~/(^|.+ )[ГD]/] {color: #FFD700; width: 3;}
+way[name=~/(^|.+ )[ДE]/] {color: #7CFC00; width: 3;}
+way[name=~/(^|.+ )[ЕF]/] {color: #D82BD6; width: 3;}
+way[name=~/(^|.+ )[ЁG]/] {color: #00FF66; width: 3;}
+way[name=~/(^|.+ )[ЖH]/] {color: #4328F6; width: 3;}
+way[name=~/(^|.+ )[ЗI]/] {color: #43DA2C; width: 3;}
+way[name=~/(^|.+ )[ИJ]/] {color: #26CEF5; width: 3;}
+way[name=~/(^|.+ )[ЙK]/] {color: #CCFF33; width: 3;}
+way[name=~/(^|.+ )[КL]/] {color: #BA55D3; width: 3;} 
+way[name=~/(^|.+ )[ЛM]/] {color: #D20C44; width: 3;}
+way[name=~/(^|.+ )[МN]/] {color: #FFA500; width: 3;}
+way[name=~/(^|.+ )[НO]/] {color: #4C55B2; width: 3;}
+way[name=~/(^|.+ )[ОP]/] {color: #FF1493; width: 3;}
+way[name=~/(^|.+ )[ПQ]/] {color: #8968CD; width: 3;}
+way[name=~/(^|.+ )[РR]/] {color: #40BA8F; width: 3;}
+way[name=~/(^|.+ )[СS]/] {color: #38FBC5; width: 3;}
+way[name=~/(^|.+ )[ТT]/] {color: #7FFFD4; width: 3;}
+way[name=~/(^|.+ )[УU]/] {color: #A40A5F; width: 3;}
+way[name=~/(^|.+ )[ФV]/] {color: #CDCD00; width: 3;}
+way[name=~/(^|.+ )[ХW]/] {color: #00BFFF; width: 3;}
+way[name=~/(^|.+ )[ЦX]/] {color: #D8FBB0; width: 3;}
+way[name=~/(^|.+ )[ЧY]/] {color: #1E90FF; width: 3;}
+way[name=~/(^|.+ )[ШZ]/] {color: #F34177; width: 3;}
+way[name=~/(^|.+ )[ЩÄ]/] {color: #51FC40; width: 3;}
+way[name=~/(^|.+ )[ЭÖ]/] {color: #12EA9A; width: 3;}
+way[name=~/(^|.+ )[ЮÜ]/] {color: #A4CB65; width: 3;}
+way[name=~/(^|.+ )[ЯŚ]/] {color: #B2D3F0; width: 3;}
